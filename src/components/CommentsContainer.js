@@ -9,20 +9,24 @@ const CommentData=[
         replies:[
             {
                 name:"Manish kumar",
-                text:"Great content"
+                text:"Great content",
+                replies:[],
             },{
                 name:"Manish kumar",
-                text:"Great content"
+                text:"Great content",
+                replies:[]
             }
         ]
     },
     {
         name:"Manish kumar",
-        text:"Great content"
+        text:"Great content",
+        replies:[],
     },
     {
         name:"Manish kumar",
-        text:"Great content"
+        text:"Great content",
+        replies:[],
     }
 ];
 
@@ -54,7 +58,7 @@ const CommentsContainer = () => {
   return (
     <div className="m-5 p-2">
         <h1 className="text-2xl font-bold">Comments:</h1>
-        <Comment data={CommentData[0]}/>
+        <CommentList comments={CommentData}/>
     </div>
   )
 }
